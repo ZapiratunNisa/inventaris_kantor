@@ -1,0 +1,141 @@
+:root {
+    --primary: #6366f1;
+    --secondary: #0d9488;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --light: #f8fafc;
+    --dark: #0f172a;
+    --sidebar: #1e293b;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* === SIDEBAR === */
+.main-sidebar {
+    background-color: var(--sidebar);
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    width: 260px;
+    box-shadow: 0 0 15px rgba(239, 237, 237, 0.1);
+}
+
+.sidebar-brand {
+    padding: 1.25rem 1.5rem;
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.75rem 1.25rem;
+    margin: 0.25rem 0;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.nav-sidebar .nav-link:hover,
+.nav-sidebar .nav-link.active {
+    background-color: rgba(99, 102, 241, 0.2);
+    color: white;
+    transform: translateX(4px);
+}
+
+.nav-icon {
+    width: 28px;
+    text-align: center;
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+
+/* === HEADER === */
+.main-header {
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* === CONTENT === */
+.content-wrapper {
+    margin-left: 260px;
+    padding-top: 60px;
+    min-height: calc(100vh - 60px);
+}
+
+.content-header {
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* === CARD UMUM === */
+.card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* sedikit dikurangi */
+    margin-bottom: 1.25rem; /* lebih seimbang */
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border-radius: 12px 12px 0 0 !important;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+}
+
+/* === SMALL BOX (STATISTIK DASHBOARD) === */
+.small-box {
+    border-radius: 12px;
+    position: relative;
+    display: block;
+    margin-bottom: 1rem; /* ↓ dikurangi agar tidak terlalu jauh dari daftar aset */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); /* ↓ lebih subtle, tidak "maju" */
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.small-box:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* hover tetap halus */
+}
+
+.small-box.bg-teal { background: linear-gradient(135deg, #0d9488, #0f766e); }
+.small-box.bg-amber { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.small-box.bg-rose { background: linear-gradient(135deg, #ef4444, #dc2626); }
+.small-box.bg-indigo { background: linear-gradient(135deg, #6366f1, #4f46e5); }
+
+/* === TOMBOL === */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: #4f46e5;
+    border-color: #4f46e5;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+/* === WARNA UTILITAS === */
+.bg-teal { background-color: #0d9488 !important; }
+.bg-amber { background-color: #f59e0b !important; }
+.bg-rose { background-color: #ef4444 !important; }
+.bg-indigo { background-color: #6366f1 !important; }
