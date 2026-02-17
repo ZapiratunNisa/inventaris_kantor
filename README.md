@@ -24,7 +24,7 @@ Sistem manajemen aset kantor dengan desain modern (bukan AdminLTE).
 - **Password**: `password`
 ## STAFF
 - **Username**: `staff`
-- **Password**: `password`
+- **Password**: `staff1`
 
 ## 💡 Catatan
 - Semua file terstruktur modular
