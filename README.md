@@ -9,7 +9,7 @@ Sistem manajemen aset kantor dengan desain modern (bukan AdminLTE).
 ## 🚀 Fitur Sistem
 - ✅ Manajemen Inventaris (CRUD)
 - ✅ Manajemen Kategori
-- ✅ Laporan Aset (PDF/Excel)
+- ✅ Laporan Aset (Excel)
 - ✅ Pengaturan Perusahaan
 - ✅ Autentikasi Pengguna
 
